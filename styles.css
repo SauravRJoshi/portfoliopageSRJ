@@ -1,11 +1,92 @@
-body {
-    background-color: aquamarine;
-}
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
 
 h2 {
     background-color: whitesmoke;
+    font-size:4vw;
+}
+
+p {
+    font-size: 20px;
 }
 
 blockquote {
-    background-color: red;
+    background-color:#FBD6CE ;
 }
+
+blockquote a {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+li {
+    display: inline;
+    font-size: 20px;
+    color: black;
+    
+  }
+
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: grey;
+  }
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+  }
+
+.centered a:hover {
+    color: black;
+}
+
+.centered a {
+    color: white;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("Images/pano2.jpg");
+  
+    /* Full height */
+    height: 600px; 
+    width: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+  }

@@ -33,25 +33,15 @@
     fetch("https://api.github.com/users/SauravRJoshi/repos")
     .then(response => response.json())
     .then(function(data) {
-    console.log(data)
-    console.log(data[1]['html_url'])
-    arrname = []
-    arrlink = []
+      console.log(data)
+    arr = []
     for (var i = 0; i < data.length ; i++) 
     {
-      arrname.push(data[i]['name'])
-      arrlink.push(data[i]['html_url']) 
+      arr.push(data[i]['name']) 
     }
-    document.getElementById("link1").href = arrlink[0]
-    document.getElementById("link2").href = arrlink[1]
     })
     function myFunction() {
-    document.getElementById("demo").innerHTML = arrname 
-    
-    }
-    
-    
-    
+    document.getElementById("demo").innerHTML = arr }
   </script>
 
 
@@ -69,7 +59,8 @@
         <div class="main" id = "maincontainer" hidden >
             
             <ul><div ></div>
-                <li><a href="https://github.com/SauravRJoshi">Checkout my Github</a></li>
+                <li><a href="#contact">Checkout my Github</a></li>
+                <li><a href ="#projects" >View my Projects</a></li>
               </ul>
 
             <img class="image" id = "profileimg" alt="Me">
@@ -79,12 +70,9 @@
             <p id = "bio"></p>
             <h3 id = "followersinformation"></h5>
 
-              <button onclick="myFunction()">Click me to list my repos from Github</button>
-              <p id="demo"></p> 
+              <button onclick="myFunction()">Click me</button>
+              <p id="demo"></p>
 
-                <h3>The links to my repos are</h3>
-              <a id = "link1">first repo link</a>
-              <a id = "link2">second repo link</a>
 
         <blockquote>
             Connect with me on <a id = "githublink">LinkedIn</a>
